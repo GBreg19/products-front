@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "sku": "das",
+      "name": "das",
+      "price": "das",
+      "dvd": {
+        "size": ""
+      },
+      "book": {
+        "weight": ""
+      },
+      "furniture": {
+        "height": "",
+        "width": "",
+        "length": ""
+      },
+      "id": 1
+    },
+    {
+      "sku": "dasd",
+      "name": "dasdas",
+      "price": "dasdas",
+      "dvd": {
+        "size": ""
+      },
+      "book": {
+        "weight": ""
+      },
+      "furniture": {
+        "height": "",
+        "width": "",
+        "length": ""
+      },
+      "id": 2
+    }
+  ]
+}
