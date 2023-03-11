@@ -25,8 +25,8 @@ const Product = ({ item, data, setData }) => {
       const response = await axios.delete(
         `http://localhost:3004/products/${id}`
       );
-      // const filteredArr = data.filter((filItem) => filItem.id !== id);
-      // setData(filteredArr);
+      const filteredArr = data.filter((filItem) => filItem.id !== id);
+      setData(filteredArr);
     } catch (e) {
       console.log(e);
     }

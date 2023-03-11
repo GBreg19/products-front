@@ -61,14 +61,16 @@ const ProductAdd = () => {
         });
       }
     }, 100);
+
     return () => {
       clearTimeout(timer);
     };
-  }, [inputValues, selected]);
+  }, [inputValues, selected, validate]);
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     const errorMsg = {};
+
     if (inputValues.sku.length < 1) {
       errorMsg.sku = "Please, submit required 'SKU";
     }
@@ -82,22 +84,22 @@ const ProductAdd = () => {
       errorMsg.type = "Please, submit required type";
     }
     setErrorTxts(errorMsg);
+
     setValidate(
       !errorMsg.sku && !errorMsg.name && !errorMsg.price && !errorMsg.type
     );
-
-    console.log(errorTxts);
     console.log(validate);
 
     if (validate) {
       try {
-        const response = await axios.post(
-          "http://localhost:3004/products",
-          inputValues
-        );
+        await axios.post("http://localhost:3004/products", inputValues);
       } catch (e) {
         console.log(e);
       }
+    }
+
+    if (validate) {
+      navigate("/");
     }
   };
 

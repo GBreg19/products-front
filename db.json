@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "sku": "das",
-      "name": "das",
+      "sku": "dasda",
+      "name": "sda",
       "price": "das",
       "dvd": {
         "size": ""
@@ -18,9 +18,9 @@
       "id": 1
     },
     {
-      "sku": "dasd",
-      "name": "dasdas",
-      "price": "dasdas",
+      "sku": "",
+      "name": "",
+      "price": "",
       "dvd": {
         "size": ""
       },
